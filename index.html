@@ -114,14 +114,130 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="coolStuffWrapper">
-                        <button type="button" class="btn btn-lg coolStuffBtn">Get Cool Stuff</button>
+                        <button type="button" class="btn btn-lg coolStuffBtn" data-toggle="modal" data-target="#coolStuffModal">Get Cool Stuff</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="sectionLight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" src="assets/kickflip.jpg">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".kf-modal-lg">Kick Flip</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" src="assets/360flip.jpg">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".360-modal-md">360° Flip</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" src="assets/bscrook.jpg">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".bscrook-modal-sm">BS Crook</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+
+        <!-- Cool Stuff Modal -->
+
+        <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="img-fluid" src="assets/KFS_modal.png">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="modalFormWrapper">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="formName">What's your name?</label>
+                                                <input type="text" class="form-control" id="formName" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formEmail">Where should we send your coll content?</label>
+                                                <input type="text" class="form-control" id="formEmail" placeholder="Email">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <!-- Kick Flip Modal -->
 
+    <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+                </div>
+                <p>Kickflips are easy. Pop, flick, catch, land. #Boom!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 360 Flip Modal -->
+
+    <div class="modal fade 360-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+                </div>
+                <p>360 flips are easy. Pop, scissor kick, catch, land. #Boom!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BS Crook Modal -->
+
+    <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+                </div>
+                <p>Backside crooks aer sick!Nollies in, nollie out! #Boom!</p>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -133,5 +249,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
